@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    .gallery-item img {
+      width: 100%; /*100%*/
+      height: 100%; /*auto*/
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-item .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+
+    .gallery-item .overlay h3 {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .gallery-item .overlay p {
+      color: #ddd;
+      font-size: 14px;
+      text-align: center;
+    }
+    .quote .layar-dalam {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .menu ul li a {
+      color: black;
+      text-decoration: black;
+    }
+
+    .isi {
+      margin-left:  50px;
+      margin-right: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="layar-dalam">
+      <div class="logo">
+        <a href=""><img src="asset/logo4.png" alt="logo2"></a>
+      </div>
+      <div class="menu">
+        <a href="#" class="tombol-menu">
+          <span class="garis"></span>
+          <span class="garis"></span>
+          <span class="garis"></span>
+        </a>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="support">Support</a></li>
+          <li><a href="gallery">Gallery</a></li>
+          <li><a href="team">Team</a></li>
+          <li><a href="blog">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="isi">
+      <section class="gallery-container">
+        <div class="gallery-item">
+          <img src="asset/bali.jpg" alt="Bali">
+          <div class="overlay">
+            <h3>Bali</h3>
+            <p>Explore the beauty of Bali's beaches and cultural landmarks.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/jogja.jpg" alt="Yogyakarta">
+          <div class="overlay">
+            <h3>Yogyakarta</h3>
+            <p>Discover the rich history and stunning landscapes of Yogyakarta.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/papua.jpg" alt="Papua">
+          <div class="overlay">
+            <h3>Papua</h3>
+            <p>Experience the untouched beauty of Papua's rainforests and islands.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/bromo.jpg" alt="Bromo">
+          <div class="overlay">
+            <h3>Bromo</h3>
+            <p>Witness the surreal landscapes and stunning sunrise at Mount Bromo.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/labuan bajo.jpg" alt="Labuan Bajo">
+          <div class="overlay">
+            <h3>Labuan Bajo</h3>
+            <p>Explore the underwater wonders and pristine beaches of Labuan Bajo.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/bandung.jpg" alt="Bandung">
+          <div class="overlay">
+            <h3>Bandung</h3>
+            <p>Experience the vibrant culture and culinary delights of Bandung.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/gunung lawu.jpg" alt="Gunung Lawu">
+          <div class="overlay">
+            <h3>Gunung Lawu</h3>
+            <p>Embark on a thrilling hike to the summit of Gunung Lawu.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/surabaya.jpg" alt="Surabaya">
+          <div class="overlay">
+            <h3>Surabaya</h3>
+            <p>Experience the bustling city life and historical landmarks of Surabaya.</p>
+          </div>
+        </div>
+      </section>
+</div>
+  <section class="quote">
+    <div class="layar-dalam">
+      <p><span>Traveling is about finding new places, new lives, and new souls.</span></p>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= title %></title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .gallery-item {
+      margin-bottom: 20px;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.05);
+    }
+    .gallery-item .text {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .menu ul li a {
+      color: black;
+      text-decoration: black;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="layar-dalam">
+      <div class="logo">
+        <a href=""><img src="asset/logo4.png"/></a>
+      </div>
+      <div class="menu">
+        <a href="#" class="tombol-menu">
+          <span class="garis"></span>
+          <span class="garis"></span>
+          <span class="garis"></span>
+        </a>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="support">Support</a></li>
+          <li><a href="gallery">Gallery</a></li>
+          <li><a href="team">Team</a></li>
+          <li><a href="blog">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="abuabu" id="blog">
+    <div class="layar-dalam">
+      <br><br>
+      <h3>Latest Blog</h3>
+      <p class="ringkasan">
+        Recent travel blog post!!
+      </p>
+      <br>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="asset/bali.jpg" alt="Bali" />
+          <div class="text">
+            <h4><a href="#">What About Bali?</a></h4>
+            <p>
+              Bali, dikenal juga sebagai Kepulauan Bali atau Pulau Dewata adalah sebuah provinsi yang terletak di Indonesia. Ibu kotanya adalah Denpasar. Provinsi Bali terletak di bagian barat Kepulauan Nusa Tenggara.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/jogja.jpg" alt="Yogyakarta" />
+          <div class="text">
+            <h4><a href="#">What About Yogyakarta?</a></h4>
+            <p>
+              Daerah Istimewa Yogyakarta[a], disingkat DIY atau DI Yogyakarta adalah daerah Istimewa setingkat provinsi di Indonesia yang merupakan peleburan dari Negara Kesultanan Yogyakarta dan Negara Kadipaten Paku Alaman. Daerah Istimewa Yogyakarta terletak di bagian selatan Pulau Jawa, dan berbatasan dengan Provinsi Jawa Tengah dan Samudra Hindia. 
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/papua.jpg" alt="Papua" />
+          <div class="text">
+            <h4><a href="#">Discover Papua</a></h4>
+            <p>
+              Papua, adalah provinsi yang terletak di pesisir utara Papua, Indonesia. Provinsi Papua sebelumnya bernama Irian Barat (1956 – 1973) dan Irian Jaya (1973 – 2000) yang mencakup seluruh Tanah Papua bekas Keresidenan Nugini Barat.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/labuan bajo.jpg" alt="Labuan Bajo" />
+          <div class="text">
+            <h4><a href="#">Explore Labuan Bajo</a></h4>
+            <p>
+              Labuan Bajo merupakan salah satu kelurahan yang berada di Kecamatan Komodo, Kabupaten Manggarai Barat, Provinsi Nusa Tenggara Timur, Indonesia. Labuan Bajo juga merupakan pusat pemerintahan dari Kecamatan Komodo dan sekaligus merupakan ibu kota Kabupaten Manggarai Barat.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/bandung.jpg" alt="Bandung" />
+          <div class="text">
+            <h4><a href="#">Attractions in Bandung</a></h4>
+            <p>
+              Bandung merupakan bagian dari Cekungan Bandung (Bandung Raya), kawasan metropolitan terbesar ketiga di Indonesia setelah Jabodetabek dan Gerbangkertosusila. Kota Bandung berbatasan langsung dengan Cimahi dan Kabupaten Bandung Barat di sisi barat dan utara;Kabupaten Bandung di sisi timur dan selatan.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/gunung lawu.jpg" alt="Gunung Lawu" />
+          <div class="text">
+            <h4><a href="#">Hiking Mount Lawu</a></h4>
+            <p>
+              Gunung Lawu  adalah sebuah gunung berapi aktif yang terletak di Pulau Jawa, tepatnya di perbatasan Jawa Tengah dan Jawa Timur, Indonesia. Gunung Lawu memiliki ketinggian sekitar 3.265 mdpl. Gunung Lawu terletak di antara tiga kabupaten, yaitu Karanganyar di Jawa Tengah, Ngawi, dan Magetan di Jawa Timur.
+            </p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="asset/bromo.jpg" alt="Bromo" />
+          <div class="text">
+            <h4><a href="#">Visiting Mount Bromo</a></h4>
+            <p>
+              Gunung Bromo atau dalam bahasa Tengger dieja "Brama", juga disebut Kaldera Tengger, adalah sebuah gunung berapi aktif di Jawa Timur, Indonesia. Gunung ini memiliki ketinggian 2.329 meter di atas permukaan laut dan berada dalam empat wilayah kabupaten, yakni Kabupaten Probolinggo, Kabupaten Pasuruan, Kabupaten Lumajang, dan Kabupaten Malang. Gunung Bromo terkenal sebagai objek wisata utama di Jawa Timur. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="javascript.js"></script>
+</body>
+</html>
